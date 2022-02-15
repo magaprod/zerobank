@@ -1,0 +1,148 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12165175300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on login page with \"username\" \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 42
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.theUserIsOnLoginPageWith(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-14T06:56:47.920Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1839862300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Error message for not selecting currency",
+        "description": "",
+        "id": "purchase-foreign-currency;error-message-for-not-selecting-currency",
+        "after": [
+          {
+            "result": {
+              "duration": 666254200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4927604300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user accesses the \"Pay Bills\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pay Bills\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.NavigationMenuDefs.theUserAccessesTheTab(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8228041900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user passes the \"Purchase Foreign Currency\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Purchase Foreign Currency\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.NavigationMenuDefs.theUserPassesTheTab(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5828498600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user tries to calculate cost without selecting a currency",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.NavigationMenuDefs.userTriesToCalculateCostWithoutSelectingACurrency()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5019692400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the error message on purchase page \"Please, ensure that you have filled all the required fields with valid values.\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please, ensure that you have filled all the required fields with valid values.\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.NavigationMenuDefs.theErrorMessageOnPurchasePageShouldBeDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Purchase Foreign Currency",
+    "description": "",
+    "id": "purchase-foreign-currency",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PurchaseForeignCurrency.feature",
+    "tags": []
+  }
+]
