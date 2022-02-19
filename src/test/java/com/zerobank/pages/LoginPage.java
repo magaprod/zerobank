@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+//made some rows from LoginPage
 public class LoginPage extends BasePage{
 
     @FindBy(xpath = "//input[@id='user_login']")
